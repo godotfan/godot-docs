@@ -17,7 +17,7 @@ Muchos productos han sido presentados prometiendo un entorno sin
 programación, pero el resultado es generalmente incompleto, demasiado
 complejo o ineficiente comparado con el código tradicional. Como
 resultado, la programación esta aquí para quedarse por un largo tiempo.
-De hecho, la dirección general en los motores de jugos ha sido agregar
+De hecho, la dirección general en los motores de juegos ha sido agregar
 herramientas que reducen la cantidad de código que necesita ser escrito
 para tareas especificas, para acelerar el desarrollo.
 
