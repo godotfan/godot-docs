@@ -19,7 +19,7 @@ y no ofrece retos. Varios aspectos hacen este problema peor como:
 -  Animar varios componentes de pantalla, para hacerlo parecer menos
    estatico.
 
-La programacion GUI es ona de las principales causas de frustracion
+La programacion GUI es una de las principales causas de frustracion
 de los programadores. Durante el desarrollo de Godot (y previas
 iteraciones del motor), varias tecnicas y filosoficas para el
 desarrollo UI fueron puestas en practica, como un modo inmediato,
@@ -89,7 +89,7 @@ tan complejos como pueden parecer.
 
 Adicionalmente, aunque Godot viene con docenas de controles para
 diferentes propositos, sucede a menudo que es simplemente mas
-sencillo obtener la funcionalidad especidica creando uno nuevo.
+sencillo obtener la funcionalidad específica creando uno nuevo.
 
 Para comenzar, crea una escena con un solo nodo. El nodo es del tipo
 "Control" y tiene cierta area de la pantalla en el editor 2D, como
@@ -143,14 +143,14 @@ Controles UI simplificados
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Este conjunto de controles es suficiente para la mayoria de los
-juegis, donde interacciones complejas o formas de presentar la
+juegos, donde interacciones complejas o formas de presentar la
 informacion no son necesarios. Pueden ser "skineados" facilmente
 con texturas regulares.
 
 -  :ref:`Label <class_Label>`: Nodo usado para mostrar texto
 -  :ref:`TextureFrame <class_TextureFrame>`: Muestra una sola
    textura, que puede ser escalada o mantenia fija.
--  :ref:`TextureButton <class_TextureButton>`: Muestra una
+-  :ref:`TextureButton <class_TextureButton>`: Muestra un
    simple boton con textura para los estados como pressed, hover,
    disabled, etc.
 -  :ref:`TextureProgress <class_TextureProgress>`: Muestra una
@@ -160,9 +160,9 @@ Adicionalmente, el reposicionado de controles es mas eficientemente
 hecho con anclas en este caso (ve el tutorial :ref:`doc_size_and_anchors`
 para mas informacion)
 
-De cualqueir forma, sucedera seguido que aun para juegos simples,
+De cualquier forma, sucedera seguido que aun para juegos simples,
 comportamientos de UI mas complejos son requeridos. Un ejemplo de
-esto una lista de elemenots con scrolling (desplazamiento) (por ejemplo
+esto es una lista de elementos con scrolling (desplazamiento) (por ejemplo
 para una tabla de puntuaciones altas), la cual necesita un
 :ref:`ScrollContainer <class_ScrollContainer>` y un :ref:`VBoxContainer <class_VBoxContainer>`.
 Este tipo de controles mas avanzados puede ser mezclado con los
