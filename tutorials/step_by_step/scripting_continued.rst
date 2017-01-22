@@ -125,14 +125,14 @@ describen a continuación:
     func _enter_tree():
         # Cuando el nodo entre en la _Scene Tree_. se vuelve activa
         # y esta función se llama. Los nodos hijos aun no entraron
-        # la escena activa. En general, es mejor usar _ready()
+        # en la escena activa. En general, es mejor usar _ready()
         # para la mayoría de los casos.
         pass
 
     func _ready():
         # Esta función es llamada luego de _enter_tree, pero se
-        # aseguro que todos los nodos hijos también hayan entrado
-        # a _Scene Tree_, y se volvieron activas.
+        # asegura que todos los nodos hijos también hayan entrado
+        # a _Scene Tree_, y se han vuelto activos.
         pass
 
     func _exit_tree():
@@ -185,7 +185,7 @@ ser usado:
 Cuando un nodo es liberado, también son liberados todos los nodos hijos.
 Por este motivo, borrar nodos manualmente es mucho mas simple de lo que
 parece. Solo libera el nodo base y todo lo demás en el sub árbol se
-ira con el.
+irá con el.
 
 Sin embargo, puede suceder muy seguido que queramos borrar un nodo que
 esta actualmente "blocked"(bloqueado), esto significa, el nodo esta
