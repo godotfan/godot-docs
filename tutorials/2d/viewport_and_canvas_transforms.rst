@@ -6,10 +6,10 @@ Viewport y transformaciones canvas
 Introducción
 ------------
 
-Este tutorial esta creado por un tema que es algo oscuro para la mayoría
-de los usuarios, y explica todas las transformaciones 2D que suceden en
-los nodos desde el momento que dibujan su contenido localmente a el
-tiempo que son dibujados en la pantalla.
+Este tutorial esta creado con un tema que es algo confuso para la mayoría
+de los usuarios, explica todas las transformaciones 2D que suceden en
+los nodos desde el momento que dibujan su contenido localmente hasta el
+momento que son dibujados en la pantalla.
 
 Transformaciones Canvas
 -----------------------
@@ -20,10 +20,9 @@ usan CanvasItem como su raíz común) van a residir en una *Capa Canvas*.
 Toda capa canvas tiene transformación (traslación, rotación, escala,
 etc.) que puede ser accedida como una :ref:`Matrix32 <class_Matrix32>`.
 
-También cubierto en el tutorial previo, los nodos son dibujados por
+Como fue explicado en el tutorial previo, los nodos son dibujados por
 defecto en el Layer 0, en el canvas incorporado. Para poner nodos en
-diferentes capas, un nodo :ref:`CanvasLayer <class_CanvasLayer>
-puede ser usado.
+diferentes capas, puedes usar un nodo :ref:`CanvasLayer <class_CanvasLayer>.
 
 
 Transformaciones globales de canvas
@@ -31,7 +30,7 @@ Transformaciones globales de canvas
 
 Los Viewports también tienen una transformación Global Canvas (que
 también es una :ref:`Matrix32 <class_Matrix32>`). Esta es la
-transformación maestra y afecta todas las transformaciones individuales
+transformación maestra y afecta a todas las transformaciones individuales
 *Canvas Layer*. Generalmente esta transformación no es de mucha utilidad,
 pero es usada en el CanvasItem Editor en el editor Godot.
 
@@ -39,7 +38,7 @@ Transformación de estiramiento
 ------------------------------
 
 Finalmente, los viewports tienen *Stretch Transform*, la cual es
-usada cuando se cambia de tamaño o se estira la pantalla. Esta
+usado cuando se cambia de tamaño o se estira la pantalla. Esta
 transformación es usada internamente (como se describe en
 :ref:`doc_multiple_resolutions`), pero puede también ser ajustada
 manualmente en cada viewport.
@@ -49,14 +48,13 @@ Los eventos de entrada recibidos en la llamada de retorno
 son multiplicados por esta transformación, pero carece de las
 superiores. Para convertir coordenadas InputEvent a coordenadas
 locales CanvasItem, la funcion :ref:`CanvasItem.make_input_local() <class_CanvasItem_make_input_local>`
-fue agregada para comodidad.
+fue agregada por comodidad.
 
 Orden de transformación
 -----------------------
 
 Para que una coordenada en las propiedades locales CanvasItem se vuelva
-una coordenada de pantalla, la siguiente cadena de transformaciones
-debe ser aplicada:
+una coordenada de pantalla, deben aplicarse las siguientes cadenas de transformaciones:
 
 .. image:: /img/viewport_transforms2.png
 
